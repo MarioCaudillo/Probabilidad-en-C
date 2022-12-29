@@ -11,7 +11,7 @@ Desarrollado por: Luis Mario Fernández Caudillo*/
 #include <time.h>
 #include <stdbool.h>
 
-int saldoG;
+int saldoG; /*variables globales para fácil manipulación de datos*/
 int apuestaG;
 void craps(); /*creamos la función craps que contendrá el juego completo*/
 
