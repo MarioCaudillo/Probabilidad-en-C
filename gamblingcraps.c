@@ -68,7 +68,8 @@ void craps(int apuesta, int saldoBanco)
     }else if(suma1 == 2 || suma1 == 3 || suma1 == 12) /*segunda condición*/
     {
         printf("Usted pierde, la casa gana, la casa siempre gana.\n");
-        saldoG = saldoBanco - apuesta;
+        saldoG = saldoBanco - apuesta; /*resta al saldo total la cantidad pérdida*/
+        /*operador ternario que condiciona el resultado de salida*/
         saldoG == 0 ? printf("Lo sentimos, saldo agotado!\n") : printf("Saldo actual en cuenta:%d\n", saldoG);
         return;
     }else    /*tercer condición del juego*/
